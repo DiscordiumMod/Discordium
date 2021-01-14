@@ -1,5 +1,5 @@
 const { remote } = require("electron");
-const { readdir, readFile } = require("fs/promises");
+const { readdir, readFile } = require("fs").promises;
 const { resolve } = require("path");
 
 const StyleManager = require("./StyleManager");
