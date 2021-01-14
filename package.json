@@ -1,0 +1,27 @@
+{
+  "name": "@discordiummod/discordium",
+  "version": "0.0.1",
+  "description": "Discordium: Discord Client Mod",
+  "main": "bootstrap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "node installer/cli.js patch",
+    "unpatch": "node installer/cli.js unpatch",
+    "cli": "node installer/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiscordiumMod/Discordium.git"
+  },
+  "keywords": [
+    "discordium",
+    "discord",
+    "mod"
+  ],
+  "author": "Rauf#3543 (rauf@rauf.wtf)",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DiscordiumMod/Discordium/issues"
+  },
+  "homepage": "https://github.com/DiscordiumMod/Discordium#readme"
+}
