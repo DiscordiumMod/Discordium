@@ -23,7 +23,7 @@ async function instansiate() {
     settingsInfo.setAttribute("id", `DiscordiumInfo-${Date.now()}`);
     settingsInfo.innerText = `
       .info-1VyQPT:after {
-        content: "Discordium ${mainfestData.version} (${mainfestData.branch});
+        content: "Discordium ${mainfestData.version} (${mainfestData.branch})";
         color: var(--text-muted);
         font-size: 12px;
         line-height: 16px;
