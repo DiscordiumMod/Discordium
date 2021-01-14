@@ -1,6 +1,5 @@
 const { ipcRenderer, contextBridge } = require("electron");
 const Logger = require("./Logger");
-const mainfest = require("../manifest.json");
 const Discordium = require("./Discordium");
 
 contextBridge.exposeInMainWorld = () => void 0;
@@ -17,13 +16,14 @@ const logger = new Logger("Preload");
 
 async function instansiate() {
   try {
+    const mainfestData = require("../manifest.json");
     document.body.prepend(StyleManagerElem);
 
     const settingsInfo = document.createElement("style");
     settingsInfo.setAttribute("id", `DiscordiumInfo-${Date.now()}`);
     settingsInfo.innerText = `
       .info-1VyQPT:after {
-        content: "Discordium ${manifest.version} (${manifest.branch});
+        content: "Discordium ${mainfestData.version} (${mainfestData.branch});
         color: var(--text-muted);
         font-size: 12px;
         line-height: 16px;
